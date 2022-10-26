@@ -8,11 +8,11 @@ public class Commercant extends Humain {
 
 	public void recevoirArgent(int argent2) {
 		super.gagnerArgent(argent2);
-		System.out.println(argent2 + "je te remercie généreux donateur !");
+		super.parler(argent2 + " sous, je te remercie généreux donateur !");
 	}
 
 	public void seFaireExtorquer() {
 		super.perdreArgent(argent);
-		System.out.println("J'ai tout perdu ! Le monde est trop injuste...");
+		super.parler("J'ai tout perdu ! Le monde est trop injuste...");
 	}
 }
