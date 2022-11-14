@@ -27,4 +27,10 @@ public class Yakusa extends Humain{
 		reputation++;
 		parler("J'ai gagner ahahah");
 	}
+	@Override
+	public void direBonjour() {
+		super.direBonjour();
+		System.out.println("Mon clan est celui de " + clan);
+	}
+	
 }

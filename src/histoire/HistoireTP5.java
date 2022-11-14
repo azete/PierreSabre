@@ -12,6 +12,7 @@ public class HistoireTP5 {
 		Commercant kumi = new Commercant("Kumi","thé", 10);
 		Yakusa yaku = new Yakusa("Yaku Le Noir", "whisky", 30, "Warsong", 0);
 		Ronin roro = new Ronin("Roro", "shochu", 60, 0);
+		yaku.direBonjour();
 		marco.faireConnaissanceAvec(roro);
 		marco.faireConnaissanceAvec(yaku);
 		marco.faireConnaissanceAvec(chonin);
