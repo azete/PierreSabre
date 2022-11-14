@@ -12,4 +12,18 @@ public class Ronin extends Humain{
 		argent *= 1/10;
 		super.parler( j.nom +" prend ces  "+ kdo);
 	}
+	public void provoquer(Yakusa adversaire) {
+		if (honneur >= adversaire.reputation * 2){
+			honneur+=1;
+			argent+= adversaire.argent;
+			parler("j'ai gagner");
+			adversaire.perdre();
+		}
+		else {
+			adversaire.gagner(argent);
+			honneur-=1;
+			argent=0;
+			parler("j'ai perdu ...");
+		}
+	}
 }
