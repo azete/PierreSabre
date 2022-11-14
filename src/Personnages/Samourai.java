@@ -18,4 +18,6 @@ public class Samourai extends Humain {
 	public void boire() {
 		System.out.println("Qu'est-ce que je vais choisir comme boisson ? Tiens je vais prendre du "+ boisson);
 	}
+	
+	
 }
