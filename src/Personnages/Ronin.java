@@ -14,14 +14,14 @@ public class Ronin extends Humain{
 	}
 	public void provoquer(Yakusa adversaire) {
 		if (honneur >= adversaire.reputation * 2){
-			honneur+=1;
+			honneur++;
 			argent+= adversaire.argent;
 			parler("j'ai gagner");
 			adversaire.perdre();
 		}
 		else {
 			adversaire.gagner(argent);
-			honneur-=1;
+			honneur--;
 			argent=0;
 			parler("j'ai perdu ...");
 		}

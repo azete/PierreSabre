@@ -11,8 +11,10 @@ public class Commercant extends Humain {
 		super.parler(argent2 + " sous, je te remercie généreux donateur !");
 	}
 
-	public void seFaireExtorquer() {
-		super.perdreArgent(argent);
+	public int seFaireExtorquer() {
+		int perte= argent;
+		super.perdreArgent(perte);
 		super.parler("J'ai tout perdu ! Le monde est trop injuste...");
+		return perte;
 	}
 }

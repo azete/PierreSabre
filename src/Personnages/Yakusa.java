@@ -13,18 +13,18 @@ public class Yakusa extends Humain{
 	public void extorquer(Commercant victime) {
 		super.parler("Tiens, tiens, ne serait-ce pas un faible marchand qui passe par là ?");
 		super.parler(victime.nom +"si tu tiens à la vie donne moi ta bourse !");
-		super.gagnerArgent(victime.argent);
-		reputation+=1;
+		super.gagnerArgent(victime.seFaireExtorquer());
+		reputation++;
 		super.parler("J’ai piqué les "+ victime.argent+ " sous de "+ victime.nom + ", ce qui me fait "+ argent +" sous dans ma poche. Hi ! Hi !");
 	}
 	public void perdre() {
 		argent=0;
-		reputation-=1;
+		reputation--;
 		parler("jai tout perdu...");
 	}
 	public void gagner(int gain) { 
 		argent+= gain;
-		reputation+=1;
+		reputation++;
 		parler("J'ai gagner ahahah");
 	}
 }
