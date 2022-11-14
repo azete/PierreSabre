@@ -2,7 +2,7 @@ package Personnages;
 
 public class Humain {
 	public String nom;
-	private String boisson;
+	public String boisson;
 	public int argent;
 	public int nombreConnaissance;
 	public Humain[] memoire = new Humain[30];
